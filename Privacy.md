@@ -43,10 +43,6 @@ DarkLens does not sell, rent, or share user data or analyzed webpage content wit
 
 DarkLens is designed to process webpage information locally within the user's browser. No external database or DarkLens-operated server is used to store analyzed webpage content in V0.2.
 
-## Children's Privacy
-
-DarkLens does not knowingly collect personal information from children.
-
 ## Changes to This Privacy Policy
 
 This Privacy Policy may be updated as DarkLens evolves. Any changes will be reflected in the publicly available version of this policy with an updated revision date.
