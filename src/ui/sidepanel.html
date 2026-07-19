@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DarkLens — Findings</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <img src="../../icons/icon32.png" alt="DarkLens" />
+    <div>
+      <h1>DarkLens</h1>
+      <p class="tagline">Evidence, not verdicts.</p>
+    </div>
+  </header>
+
+  <div class="principle-banner">
+    DarkLens detects and documents evidence of potentially manipulative interface patterns.
+    It does not determine legal liability.
+  </div>
+
+  <div id="summary" class="summary">Scanning current page&hellip;</div>
+
+  <section id="findings-section">
+    <div id="findings" class="findings-list"></div>
+  </section>
+
+  <section id="blindspots-section" class="blindspots-section hidden">
+    <div class="section-label">Blind spots / unable to reliably evaluate</div>
+    <div id="blindspots" class="findings-list"></div>
+  </section>
+
+  <footer>
+    <div class="footer-actions">
+      <button id="rescan">Re-scan this page</button>
+      <button id="export-json" class="secondary">Export JSON</button>
+    </div>
+    <span class="footer-note">Rule-based detection · V0.2</span>
+  </footer>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

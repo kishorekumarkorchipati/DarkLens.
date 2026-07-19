@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Welcome to DarkLens</title>
+<style>
+  :root {
+    --ink: #0A1120;
+    --panel: #121B2E;
+    --panel-2: #16213A;
+    --border: #263752;
+    --text: #ECF1F8;
+    --muted: #8B98AE;
+    --teal: #2DD4BF;
+    --teal-dim: rgba(45, 212, 191, 0.12);
+    --brass: #CFA24A;
+    --brass-soft: #E7C77C;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 56px 24px 64px;
+    background: radial-gradient(120% 140% at 15% 0%, #16213A 0%, #0A1120 55%);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+
+  .sheet {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+  }
+
+  .header {
+    padding: 36px 40px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .brand-name {
+    font-family: Iowan Old Style, Palatino, Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+
+  .brand-name .status {
+    display: block;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-top: 3px;
+  }
+
+  .case-tag {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    color: var(--brass-soft);
+    border: 1px solid rgba(207, 162, 74, 0.4);
+    background: rgba(207, 162, 74, 0.08);
+    padding: 5px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .hairline {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border) 15%, var(--border) 85%, transparent);
+  }
+
+  .body-content {
+    padding: 32px 40px 8px;
+  }
+
+  h1 {
+    font-family: Iowan Old Style, Palatino, Georgia, serif;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    color: var(--text);
+  }
+
+  .principle {
+    background: var(--teal-dim);
+    border-left: 3px solid var(--teal);
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    font-size: 14.5px;
+    color: #D7F7F1;
+    margin: 0 0 24px;
+  }
+
+  .principle b { color: #ffffff; }
+
+  .intro {
+    font-size: 14.5px;
+    color: var(--muted);
+    margin: 0 0 28px;
+  }
+
+  .intro strong { color: var(--text); font-weight: 600; }
+
+  .steps {
+    position: relative;
+    margin: 0 0 8px;
+  }
+
+  .step {
+    display: flex;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 26px;
+  }
+
+  .step:last-child { padding-bottom: 0; }
+
+  .step-num {
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--panel-2);
+    border: 1.5px solid var(--brass);
+    color: var(--brass-soft);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 12.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 13.5px;
+    top: 28px;
+    bottom: -2px;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(207, 162, 74, 0.5), rgba(207, 162, 74, 0.05));
+  }
+
+  .step-text {
+    font-size: 14.5px;
+    padding-top: 4px;
+    color: var(--text);
+  }
+
+  .step-text strong { color: var(--brass-soft); font-weight: 600; }
+
+  .footer {
+    padding: 20px 40px 32px;
+  }
+
+  .footer p {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: var(--muted);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="header">
+      <div class="brand">
+        <img src="../icons/icon128.png" alt="DarkLens icon" />
+        <div class="brand-name">
+          DarkLens
+          <span class="status">Installed &amp; active</span>
+        </div>
+      </div>
+      <span class="case-tag">V0.2 &middot; RULE&#8209;BASED</span>
+    </div>
+
+    <div class="hairline"></div>
+
+    <div class="body-content">
+      <h1>Your evidence auditor is ready</h1>
+
+      <div class="principle">
+        DarkLens detects and documents evidence of potentially manipulative interface patterns.
+        <b>It does not determine legal liability.</b>
+      </div>
+
+      <p class="intro">
+        DarkLens never injects banners or floating widgets into the pages you visit &mdash; its
+        signal lives quietly in the <strong>toolbar icon badge</strong>. Chrome hides new
+        extensions behind the puzzle&#8209;piece menu by default, so take ten seconds to pin it:
+      </p>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Click the puzzle&#8209;piece icon in your Chrome toolbar.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Find <strong>DarkLens</strong> in the list and click the pin icon beside it.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Browse normally. The icon badge shows a count when DarkLens finds something &mdash; click it to open the side panel with full evidence.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hairline"></div>
+
+    <div class="footer">
+      <p>
+        V0.2 uses rule&#8209;based detection across 3 pattern classes. Research / portfolio
+        prototype &mdash; not a compliance or legal tool. End&#8209;to&#8209;end benchmark
+        results are pending until the evaluation harness is running. See SYSTEM&#8209;CARD.md
+        for known limitations.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Ink navy backdrop -->
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#141E33"/>
+      <stop offset="100%" stop-color="#0A1120"/>
+    </linearGradient>
+
+    <!-- Brass ring / handle -->
+    <linearGradient id="brass" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F0D48A"/>
+      <stop offset="45%" stop-color="#CFA24A"/>
+      <stop offset="100%" stop-color="#9C7326"/>
+    </linearGradient>
+    <linearGradient id="brassSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E7C77C"/>
+      <stop offset="100%" stop-color="#AD8236"/>
+    </linearGradient>
+
+    <!-- Lens: teal gem facet -->
+    <radialGradient id="lens" cx="38%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#5EEAD4"/>
+      <stop offset="38%" stop-color="#14B8A6"/>
+      <stop offset="78%" stop-color="#0D7A6E"/>
+      <stop offset="100%" stop-color="#08463F"/>
+    </radialGradient>
+
+    <radialGradient id="lensCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0B342F"/>
+      <stop offset="100%" stop-color="#0B342F" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="none" stroke="#2A3A56" stroke-width="2"/>
+
+  <g filter="url(#softShadow)">
+    <!-- magnifier handle -->
+    <rect x="318" y="322" width="46" height="150" rx="20"
+          transform="rotate(45 341 322)" fill="url(#brass)"/>
+    <rect x="326" y="330" width="14" height="150" rx="7"
+          transform="rotate(45 333 330)" fill="#F5DFA0" opacity="0.55"/>
+
+    <!-- lens ring -->
+    <circle cx="222" cy="222" r="128" fill="none" stroke="url(#brassSoft)" stroke-width="22"/>
+    <circle cx="222" cy="222" r="128" fill="none" stroke="#0A1120" stroke-width="22" opacity="0.18"/>
+
+    <!-- lens glass -->
+    <circle cx="222" cy="222" r="112" fill="url(#lens)"/>
+
+    <!-- facet cuts, gem-like -->
+    <path d="M222 122 L268 168 L222 214 L176 168 Z" fill="#0B342F" opacity="0.22"/>
+    <path d="M222 214 L292 222 L222 292 L152 222 Z" fill="#062C27" opacity="0.20"/>
+
+    <!-- specular highlight -->
+    <ellipse cx="186" cy="176" rx="34" ry="20" fill="#FFFFFF" opacity="0.45"/>
+
+    <!-- flag / evidence tick, brass accent, sits at lower-right of the lens -->
+    <circle cx="288" cy="290" r="17" fill="url(#brass)"/>
+    <path d="M281 290 L286 296 L297 282" fill="none" stroke="#0A1120" stroke-width="5.5"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

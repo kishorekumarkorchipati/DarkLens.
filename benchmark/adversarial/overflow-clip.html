@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Adversarial: overflow:hidden clipping (synthetic)</title></head>
+<body>
+  <h1>Synthetic Test — NOT a real company</h1>
+  <p>Expected DarkLens V0.2 result: finding IS logged in the side panel (detection
+  reads DOM/computed styles, not visual render), but the on-page outline highlight
+  may be visually clipped by the overflow:hidden container below. See RED-TEAM.md #4
+  and SYSTEM-CARD.md known limitations.</p>
+
+  <div style="overflow:hidden; width:300px; height:80px; border:1px solid #ccc;">
+    <div class="consent-banner">
+      <button style="font-size:22px;padding:16px 30px;background:#16a34a;color:white;">Allow</button>
+      <a href="#" style="font-size:9px;color:#e2e8f0;">manage preferences</a>
+    </div>
+  </div>
+</body></html>
