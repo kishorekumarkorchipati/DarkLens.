@@ -55,6 +55,6 @@ V0.2 is **rule-based** (regex + DOM inspection). It is not an AI/LLM classifier.
 - [`RED-TEAM.md`](docs/RED-TEAM.md) — adversarial test cases and threat model
 
 ## License
-
-MIT — see [`LICENSE`](LICENSE).
 Developed by: Korchipati Kishore Kumar
+MIT — see [`LICENSE`](LICENSE).
+
