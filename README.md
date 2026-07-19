@@ -1,4 +1,4 @@
-# DarkLens — Dark Pattern Evidence Auditor (V0.2)
+# DarkLens: Dark Pattern Evidence Auditor (V0.2)
 
 ![DarkLens banner](store-assets/marquee-promo-tile-1400x560.png)
 
