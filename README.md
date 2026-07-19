@@ -9,7 +9,7 @@
 **Research question:**
 How reliably can automated systems identify manipulative digital interfaces under adversarial conditions, across languages and jurisdictions, without making unsupported legal conclusions?
 
-**What this is:** a portfolio research prototype for AI governance, AI ethics, and AI red-teaming — not a commercial product, not a compliance tool.
+**What this is:** a portfolio research prototype for AI governance, AI ethics, and AI red-teaming-not a commercial product, not a compliance tool.
 
 ## What V0.2 does
 
@@ -44,17 +44,18 @@ Full folder layout, detector logic, and design constraints are documented in the
 
 RAG retrieval, LLM-based classification, confidence-interval scoring, DOM hashing, floating/injected page UI, and any output that names a specific real company or asserts a legal violation. See `SYSTEM-CARD.md` for the full list and rationale.
 
-## Detection method — stated plainly
+## Detection method-stated plainly
 
 V0.2 is **rule-based** (regex + DOM inspection). It is not an AI/LLM classifier. If a future version adds LLM-based classification, that version must also add the indirect-prompt-injection threat model described in `RED-TEAM.md`, since webpage text would become untrusted input to a model context at that point.
 
 ## More documentation
 
-- [`SYSTEM-CARD.md`](docs/SYSTEM-CARD.md) — capabilities, known limitations, evaluation status
-- [`GOVERNANCE.md`](docs/GOVERNANCE.md) — regulatory-mapping rationale and boundaries
-- [`RED-TEAM.md`](docs/RED-TEAM.md) — adversarial test cases and threat model
+- [`SYSTEM-CARD.md`](docs/SYSTEM-CARD.md)-capabilities, known limitations, evaluation status
+- [`GOVERNANCE.md`](docs/GOVERNANCE.md)-regulatory-mapping rationale and boundaries
+- [`RED-TEAM.md`](docs/RED-TEAM.md)-adversarial test cases and threat model
 
 ## License
 Developed by: Korchipati Kishore Kumar
-MIT — see [`LICENSE`](LICENSE).
+
+MIT-see [`LICENSE`](LICENSE).
 
